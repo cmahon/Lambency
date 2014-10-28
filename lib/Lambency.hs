@@ -49,6 +49,7 @@ import Lambency.Texture as L
 import Lambency.Transform as L
 import Lambency.Types as L hiding (left,right)
 import Lambency.Utils as L
+import Lambency.Vertex as L
 
 import Control.Applicative
 import Control.Monad.RWS.Strict
