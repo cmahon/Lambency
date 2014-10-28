@@ -1,31 +1,31 @@
 module Lambency (
+  module L,
   initLambency,
-  module Lambency.Bounds,
-  module Lambency.Camera,
-  module Lambency.Font,
-  module Lambency.GameObject,
-  module Lambency.Light,
-  module Lambency.Loaders,  
-  module Lambency.Material,
-  Mesh, triangle, cube, plane, quad,
-  module Lambency.Render,
-  module Lambency.Shader,
-  module Lambency.Sprite,
-  loadTexture, createSolidTexture, destroyTexture,
-  module Lambency.Transform,
-  Camera, CameraType, CameraViewDistance,
-  LightType, Light,
-  ShaderValue(..), ShaderMap,
-  Material,
-  RenderFlag(..), RenderObject(..),
-  OutputAction(..),
-  TimeStep,
-  Game(..), GameWire, GameMonad,
-  module Lambency.Utils,
-
+  -- module Lambency.Bounds,
+  -- module Lambency.Camera,
+  -- module Lambency.Font,
+  -- module Lambency.GameObject,
+  -- module Lambency.Light,
+  -- module Lambency.Loaders,  
+  -- module Lambency.Material,
+  -- Mesh, triangle, cube, plane, quad,
+  -- module Lambency.Render,
+  -- module Lambency.Shader,
+  -- module Lambency.Sprite,
+  -- loadTexture, createSolidTexture, destroyTexture,
+  -- module Lambency.Transform,
+  -- Camera, CameraType, CameraViewDistance,
+  -- LightType, Light,
+  -- ShaderValue(..), ShaderMap,
+  -- Material,
+  -- RenderFlag(..), RenderObject(..),
+  -- OutputAction(..),
+  -- TimeStep,
+  -- Game(..), GameWire, GameMonad,
+  -- module Lambency.Utils,
   makeWindow, destroyWindow, run, runWindow,
   quitWire,
-  module Lambency.Sound
+  -- module Lambency.Sound
 ) where
 
 --------------------------------------------------------------------------------
@@ -33,22 +33,22 @@ module Lambency (
 import qualified Graphics.UI.GLFW as GLFW
 import qualified Graphics.Rendering.OpenGL as GL
 
-import Lambency.Bounds
-import Lambency.Camera
-import Lambency.Font
-import Lambency.GameObject
-import Lambency.Light
-import Lambency.Loaders
-import Lambency.Material
-import Lambency.Mesh
-import Lambency.Render
-import Lambency.Shader
-import Lambency.Sound
-import Lambency.Sprite
-import Lambency.Texture
-import Lambency.Transform
-import Lambency.Types
-import Lambency.Utils
+import Lambency.Bounds as L
+import Lambency.Camera as L
+import Lambency.Font as L
+import Lambency.GameObject as L
+import Lambency.Light as L
+import Lambency.Loaders as L
+import Lambency.Material as L
+import Lambency.Mesh as L
+import Lambency.Render as L
+import Lambency.Shader as L
+import Lambency.Sound as L
+import Lambency.Sprite as L
+import Lambency.Texture as L
+import Lambency.Transform as L
+import Lambency.Types as L hiding (left,right)
+import Lambency.Utils as L
 
 import Control.Applicative
 import Control.Monad.RWS.Strict
